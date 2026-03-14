@@ -48,6 +48,9 @@ uv run python -m src.tasks.chapter_03.task_1.test_model
 ```
 Loads the saved model, evaluates on the 10 000-sample MNIST test set, and prints accuracy + classification report + confusion matrix.
 
+### Results
+![Task 1 metrics](plots/chapter_03/task_1_—_mnist_knn.png)
+
 ---
 
 ## Task 2 — MNIST KNN with Data Augmentation
@@ -67,6 +70,9 @@ Also saves sample visualizations to `task_2/original_images/` and `task_2/transf
 uv run python -m src.tasks.chapter_03.task_2.test_model
 ```
 Same evaluation as Task 1 — accuracy, classification report, and confusion matrix on the full MNIST test set.
+
+### Results
+![Task 2 metrics](plots/chapter_03/task_2_—_mnist_augmented_knn.png)
 
 ---
 
@@ -96,6 +102,9 @@ Saves model to: `models/model_task3_<acc>pct.joblib`
 uv run python -m src.tasks.chapter_03.task_3.test_model
 ```
 Evaluates on the held-out 20% test split. Reports accuracy, precision, recall, classification report, and confusion matrix.
+
+### Results
+![Task 3 metrics](plots/chapter_03/task_3_—_titanic_logreg.png)
 
 ---
 
@@ -141,6 +150,15 @@ uv run python -m src.tasks.chapter_03.task_4.test_model
 Loads the saved pipeline, evaluates on the 20% held-out split. Reports accuracy, precision, recall, classification report, and confusion matrix.
 
 > **Note:** The test script must be run after training so the corpus is already downloaded.
+
+### Results
+![Task 4 metrics](plots/chapter_03/task_4_—_spam_classifier.png)
+
+---
+
+## Results Summary
+
+![Accuracy summary](plots/chapter_03/accuracy_summary.png)
 
 ---
 
