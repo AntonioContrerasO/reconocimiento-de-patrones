@@ -1,0 +1,21 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Dataset files — kept local only (ignore contents, keep directory via .gitkeep)
+data/*
+!data/.gitkeep
+data/**/*
+!data/**/.gitkeep
+
+# Trained models — kept local only (can be large)
+models/*
+!models/.gitkeep
+src/models/
